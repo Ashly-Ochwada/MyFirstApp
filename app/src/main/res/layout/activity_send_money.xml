@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/etPassword"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SendMoneyActivity">
@@ -57,24 +58,10 @@
         android:layout_width="53dp"
         android:layout_height="42dp"
         android:layout_marginStart="24dp"
-        app:layout_constraintBottom_toBottomOf="@+id/editTextNumber"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextNumberPassword"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/editTextNumber"
+        app:layout_constraintTop_toTopOf="@+id/editTextNumberPassword"
         app:srcCompat="@drawable/ic_baseline_lock_24" />
-
-    <EditText
-        android:id="@+id/editTextNumber"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="48dp"
-        android:layout_marginEnd="24dp"
-        android:ems="10"
-        android:inputType="number"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.652"
-        app:layout_constraintStart_toEndOf="@+id/imageView3"
-        app:layout_constraintTop_toBottomOf="@+id/etMoney" />
 
     <Button
         android:id="@+id/btnMoney"
@@ -94,8 +81,20 @@
         android:layout_marginEnd="100dp"
         android:text="Cancel"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextNumberPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="24dp"
+        android:ems="10"
+        android:inputType="numberPassword"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumber"
-        app:layout_constraintVertical_bias="0.413" />
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/etMoney" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
